@@ -77,7 +77,7 @@
     <div class="scroller-container">
       <div class="link">
         <div class="scroller-links">
-          <div class="scroller-link"> <a href="" class="active">NEW ARRIVALS</a></div>
+          <div class="scroller-link"> <a href="">NEW ARRIVALS</a></div>
           <div class="scroller-link"> <a href="">BEST SELLERS</a></div>
           <div class="scroller-link"> <a href="">DEALS</a></div>
         </div>
@@ -187,9 +187,9 @@
     <div class="footer-main">
       <div class="footer-container">
         <div class="footer-heading">
-          <h2>
+          <h1>
             LIBERTA PIZZARIA Frijsenborgvej 3 G, st 8240 Risskov Denmark
-          </h2>
+          </h1>
         </div>
         <div class="footer-text">
           <div class="footer-contact">
@@ -244,20 +244,7 @@
       </div>
     </div>
   </footer>
-  <script>
-    const hamburgerMenu = document.getElementById("hamburgerMenu");
-    const navLinks = document.getElementById("navLinks");
-    hamburgerMenu.addEventListener("click", () => {
-      navLinks.classList.toggle("active");
-    });
-    const carousel = document.getElementById('carousel');
-    const nextArrow = document.getElementById('next-arrow');
-
-    nextArrow.addEventListener('click', () => {
-      const itemWidth = carousel.firstElementChild.offsetWidth;
-      carousel.scrollBy({ left: itemWidth, behavior: 'smooth' });
-    });
-  </script>
+  <script src="/app.js"></script>
 </body>
 
 </html>

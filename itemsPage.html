@@ -19,15 +19,12 @@
     </header>
     <div class="navigation-wrapper">
       <div class="menu-container">
-        <li class="menu-item active" onclick="handleMenuClick(0)">
-          ITALIENSK PIZZA
-        </li>
         <li class="menu-item" onclick="handleMenuClick(1)">BURGERE</li>
         <li class="menu-item" onclick="handleMenuClick(2)">FROKOST TILBUD</li>
         <li class="menu-item" onclick="handleMenuClick(3)">
           ITALIENSK FAMILIEPIZZA
         </li>
-        <li class="menu-item">EKSTRA</li>
+        <li class="menu-item" >EKSTRA</li>
         <li class="menu-item">TILBEHØR</li>
         <li class="arrow">&#8594;</li>
       </div>
@@ -100,7 +97,7 @@
           </div>
           <p class="second-heading">AFHENTINING</p>
         </div>
-        <h4 class="your-item">Your Items</h4>
+        <h3 class="your-item">Your Items</h3>
         <div class="cart">
           <div class="cart-img">
             <img src="/assets/can.png" width="80px" alt="coldring" />
@@ -258,35 +255,6 @@
         </div>
       </div>
     </footer>
-    <script>
-      function swapContent(card1, card2) {
-        const tempContent = card1.innerHTML;
-        card1.innerHTML = card2.innerHTML;
-        card2.innerHTML = tempContent;
-      }
-      function handleMenuClick(index) {
-        const cards = document.querySelectorAll(".card");
-        if (index === 0) {
-          swapContent(cards[0], cards[1]);
-        } else if (index === 1) {
-          swapContent(cards[1], cards[2]);
-        } else if (index === 2) {
-          swapContent(cards[2], cards[3]);
-        } else if (index === 3) {
-          swapContent(cards[3], cards[0]);
-        }
-      }
-      document.addEventListener("DOMContentLoaded", () => {
-        const hamburgerMenu = document.getElementById("hamburgerMenu");
-        const navLinks = document.getElementById("navLinks");
-
-        if (hamburgerMenu) {
-          hamburgerMenu.addEventListener("click", () => {
-            console.log("clicked");
-            navLinks.classList.toggle("active");
-          });
-        }
-      });
-    </script>
+    <script src="/app.js"></script>
   </body>
 </html>

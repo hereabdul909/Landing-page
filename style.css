@@ -1,10 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Parkinsans:wght@300..800&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Parkinsans:wght@300..800&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');
-
+@import url(https://db.onlinewebfonts.com/c/ab8aa1609f0d6cbe79541c67cd5046f9?family=NeoTech+Bold);
+@import url(https://db.onlinewebfonts.com/c/3c6b0199ae7b57966132e83c939d77e2?family=Futura+PT+Medium);
 * {
   margin: 0;
   padding: 0;
@@ -42,8 +37,9 @@ body {
 .navbar .nav-links a {
   text-decoration: none;
   color: white;
-  font-size: 0.8rem;
+  font-size: .9srem;
   text-transform: uppercase;
+  font-family: "Futura PT Medium";
 }
 
 .navbar .nav-links a:hover {
@@ -65,8 +61,9 @@ body {
   color: white;
   background-color: #7A5230;
   text-transform: uppercase;
-  padding: 35px 50px 35px 20px;
-  font-size: 0.8rem;
+  padding: 33px 50px 33px 20px;
+  font-size: 0.9rem;
+  font-family: "Futura PT Medium";
 }
 
 .nav-btn .hamburger {
@@ -118,12 +115,14 @@ body {
 
 .hero-content p {
   font-size: 1.3rem;
+  font-family: "NeoTech Bold";
   color: rgb(194, 197, 200);
 }
 
 .hero-content h1 {
   font-size: 3rem;
-  font-family: "Archivo", sans-serif;
+  font-family: "NeoTech Bold";
+
   margin: 40px 0;
 }
 
@@ -132,6 +131,7 @@ body {
   color: white;
   border: 1px solid white;
   border-radius: 20px;
+  font-family: "Futura PT Medium";
   padding: 10px 20px;
   text-decoration: none;
 }
@@ -149,7 +149,7 @@ body {
 .text-content h1 {
   font-size: 2.5rem;
   width: 45%;
-  font-family: "Archivo", sans-serif;
+  font-family: "NeoTech Bold";
   margin: 5px 0;
 }
 
@@ -184,7 +184,7 @@ body {
 
 .pizza-content h2 {
   font-weight: 400;
-  font-family: "Archivo", sans-serif;
+  font-family: "Futura PT Medium";
 }
 
 .pizza-content p {
@@ -194,7 +194,7 @@ body {
   color: #b5b5b5;
   line-height: 2;
   margin-bottom: 20px;
-  font-family: "Archivo", sans-serif;
+  font-family: "Futura PT Medium";
 }
 
 .about-content {
@@ -225,12 +225,14 @@ body {
 .over-box h3,
 .over-box-2 h3 {
   padding: 10px;
+  font-family: "Futura PT Medium";
 }
 
 .over-box p,
 .over-box-2 p {
   padding: 10px;
   line-height: 2;
+  font-family: "Futura PT Medium";
   margin-bottom: 20px;
 }
 
@@ -240,9 +242,11 @@ body {
   border-radius: 20px;
   text-decoration: none;
   color: white;
+  font-family: "Futura PT Medium";
 }
 .over-box a {
   border: 1px solid black;
+  font-family: "Futura PT Medium";
   background-color: black;
 }
 .over-box a:hover{
@@ -252,6 +256,7 @@ body {
 }
 .over-box-2 a {
   border: 1px solid #7A5230;
+  font-family: "Futura PT Medium";
   background-color: #7A5230;
 }
 .over-box-2 a:hover{
@@ -273,6 +278,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  font-family: "Futura PT Medium";
 }
 
 .link .link-btn {
@@ -299,8 +305,7 @@ body {
    
   text-decoration: none;
 }
-
-.scroller-links .scroller-link .active {
+.scroller-link a.active {
   color: rgb(255, 255, 255);
   font-weight: bold;
 }
@@ -330,7 +335,7 @@ body {
 
 .box h2 {
   color: white;
-  font-family: "Archivo", sans-serif;
+  font-family: "NeoTech Bold";
   margin-top: 10px;
 }
 
@@ -339,6 +344,7 @@ body {
   text-align: center;
   margin-top: 10px;
   font-weight: 100;
+  font-family: "Futura PT Medium";
 }
 #next-arrow{
   background-color: white;
