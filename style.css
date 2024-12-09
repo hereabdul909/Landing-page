@@ -248,6 +248,7 @@ body {
   border: 1px solid black;
   font-family: "Futura PT Medium";
   background-color: black;
+  transition: all .3s;
 }
 .over-box a:hover{
   border:1px solid black;
@@ -258,6 +259,7 @@ body {
   border: 1px solid #7A5230;
   font-family: "Futura PT Medium";
   background-color: #7A5230;
+  transition: all .3s;
 }
 .over-box-2 a:hover{
   border:1px solid #7A5230;
@@ -288,6 +290,7 @@ body {
   text-decoration: none;
   background-color: white;
   color: black;
+  transition: all .3s;
 }
 .link-btn:hover{
   background-color: black;
@@ -356,6 +359,7 @@ body {
   right: 0;
   top: 13rem;
   cursor: pointer;
+  transition: all .3s;
 }
 #next-arrow:hover{
   background-color: black;

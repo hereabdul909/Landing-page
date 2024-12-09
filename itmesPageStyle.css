@@ -21,10 +21,10 @@
   color: #fff;
   background: none;
   padding: 10px 20px;
+  transition: all .3s;
   border-radius: 20px;
   list-style: none;
   cursor: pointer;
-  transition: all 0.3s;
   white-space: nowrap;
   font-family: "Futura PT Medium";
 }
@@ -38,7 +38,6 @@
   background-color: #fff;
   color: #7a5230;
   list-style: disc;
-  transition: all 0.3s;
 }
 .items-container {
   display: flex;
@@ -236,10 +235,12 @@
   width: 100%;
   display: flex;
   justify-content: center;
+ 
 }
 .cart-btn button {
   background-color: #7a5230;
   width: 90%;
+  cursor: pointer;
   margin: 10px;
   padding: 15px;
   border: none;
@@ -247,6 +248,13 @@
   font-weight: 400;
   font-family: "Futura PT Medium";
   border-radius: 8px;
+  transition: all .3s;
+}
+button:hover{
+  border: 1px solid #7a5230;
+  background-color: white;
+  color: #7a5230;
+
 }
 .cart-btn button .fa-arrow-right-long {
   margin-left: 10px;
@@ -352,8 +360,12 @@ iframe {
   border-radius: 20px;
   font-family: "Futura PT Medium";
   padding: 10px;
+  transition: all .3s;
 }
-
+.footer-btn a:hover{
+  background-color: white;
+  color: #7a5230;
+}
 .footer-btn .contact-icon {
   background-color: white;
   padding: 5px 10px;
@@ -373,6 +385,7 @@ iframe {
 .footer-content .social {
   display: flex;
   gap: 5px;
+ 
 }
 
 .social .fa-brands {
@@ -385,9 +398,14 @@ iframe {
   height: 40px;
   display: flex;
   align-items: center;
+  transition: all .3s;
   justify-content: center;
 }
 
+.social .fa-brands:hover{
+  background-color: white;
+  color: #7a5230;
+}
 .footer-content .time {
   display: flex;
   font-family: "Futura PT Medium";
