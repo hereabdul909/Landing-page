@@ -1,0 +1,579 @@
+@import url("https://fonts.cdnfonts.com/css/neo-tech");
+@import url("https://db.onlinewebfonts.com/c/3c6b0199ae7b57966132e83c939d77e2?family=Futura + PT + Medium");
+.navigation-wrapper {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.menu-container {
+  display: flex;
+  overflow-x: auto;
+  white-space: nowrap;
+  scrollbar-width: none;
+  padding: 10px;
+  gap: 10px;
+}
+.menu-container .menu-item,
+.arrow {
+  border: 1px solid #fff;
+  color: #fff;
+  background: none;
+  padding: 10px 20px;
+  transition: all .3s;
+  border-radius: 20px;
+  list-style: none;
+  cursor: pointer;
+  white-space: nowrap;
+  font-family: "Futura PT Medium";
+}
+.menu-item.active {
+  background-color: #fff;
+  color: #7a5230;
+  list-style: disc;
+}
+
+.menu-container .menu-item:hover {
+  background-color: #fff;
+  color: #7a5230;
+  list-style: disc;
+}
+.items-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+}
+.left-side {
+  display: flex;
+  flex-direction: column;
+}
+.cards {
+  display: flex;
+  gap: 2px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.card {
+  background-color: white;
+  border-radius: 10px;
+  width: 350px;
+  margin: 2px;
+  padding: 10px;
+  position: relative;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card .new {
+  position: absolute;
+  top: 10px;
+  width: 70px;
+}
+.card .item {
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  width: 260px;
+  height: 200px;
+  object-fit: contain;
+  margin: auto;
+  padding: 10px;
+}
+.card .label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  font-weight: bold;
+  font-family: "Futura PT Medium";
+}
+.card .btn {
+  display: flex;
+  justify-content: flex-end;
+  margin: 10px;
+  font-family: "Futura PT Medium";
+}
+.card .btn .add {
+  padding: 4px 10px;
+  border-radius: 60%;
+  border: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.354);
+  font-size: 1.2rem;
+}
+.card .label span {
+  color: #7a5230;
+  font-family: "Futura PT Medium";
+}
+.card .pra {
+  text-align: left;
+  font-size: 0.7rem;
+}
+.right-side {
+  background: white;
+  width: 350px;
+  border-radius: 10px;
+}
+.right-side .heading-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(241, 237, 237);
+  margin: 10px;
+  border-radius: 10px;
+}
+.right-side .heading-menu .first-heading {
+  text-align: center;
+  border: 1px solid #7a5230;
+  background-color: white;
+  font-family: "Futura PT Medium";
+  padding: 10px 30px;
+  border-radius: 10px;
+}
+.right-side .heading-menu .first-heading p {
+  color: #7a5230;
+  font-weight: 600;
+  font-family: "Futura PT Medium";
+}
+.right-side .heading-menu .first-heading span {
+  color: #939090;
+  font-family: "Futura PT Medium";
+}
+.right-side .heading-menu .second-heading {
+  margin-right: 30px;
+  font-family: "Futura PT Medium";
+}
+.right-side .your-item {
+  padding: 10px 20px;
+  font-family: "Futura PT Medium";
+}
+.right-side .cart {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+.cart .cart-img {
+  padding: 5px;
+}
+.cart .cart-item-detail .head {
+  font-weight: bold;
+  font-family: "Futura PT Medium";
+}
+.cart .cart-item-detail .quantity {
+  color: #938c8c;
+  font-weight: 100;
+  margin-top: 5px;
+}
+.cart .cart-item-detail .more-item {
+  display: flex;
+  margin-top: 10px;
+  align-items: center;
+  justify-content: space-between;
+  letter-spacing: 2px;
+}
+.more-item p {
+  color: #7a5230;
+  font-family: "Futura PT Medium";
+}
+.more-item .increament {
+  border: 1px solid lightgray;
+  border-radius: 20px;
+  padding: 8px 10px;
+  margin-left: 6rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.increament .decreament{
+  cursor: pointer;
+}
+.increament .bg {
+  background-color: #f2f0f0;
+  border-radius: 20px;
+  padding: 0 5px;
+  cursor: pointer;
+}
+.right-side .total {
+  width: 100%;
+  background-color: rgb(243, 240, 240);
+  margin-top: 15px;
+}
+.total .sub {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+.sub h4 {
+  font-weight: 300;
+  font-family: "Futura PT Medium";
+}
+.sub p {
+  color: #7a5230;
+  font-weight: 500;
+  font-family: "Futura PT Medium";
+}
+.right-side .all-total {
+  width: 100%;
+  margin-top: 15px;
+}
+.all-total .sub {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+.sub .all-sub {
+  font-weight: bold;
+  font-family: "Futura PT Medium";
+}
+.all-sub span {
+  font-weight: 200;
+  color: #616060;
+  font-family: "Futura PT Medium";
+}
+.sub .mute-sub {
+  font-size: 0.8rem;
+  font-family: "Futura PT Medium";
+  color: #616060;
+}
+.right-side .cart-btn {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+ 
+}
+.cart-btn button {
+  background-color: #7a5230;
+  width: 90%;
+  cursor: pointer;
+  margin: 10px;
+  padding: 15px;
+  border: none;
+  color: white;
+  font-weight: 400;
+  font-family: "Futura PT Medium";
+  border-radius: 8px;
+  transition: all .3s;
+}
+button:hover{
+  border: 1px solid #7a5230;
+  background-color: white;
+  color: #7a5230;
+
+}
+.cart-btn button .fa-arrow-right-long {
+  margin-left: 10px;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.map {
+  width: 100%;
+  text-align: center;
+}
+
+.map h2 {
+  margin-top: 10rem;
+  color: white;
+  font-size: 2rem;
+  margin-bottom: 5rem;
+  text-align: center;
+  font-family: "Futura PT Medium";
+}
+
+.map .google-map {
+  width: 100%;
+  height: 50vh;
+}
+iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+.menu-img {
+  width: 100%;
+  position: relative;
+}
+.menu-img .img-container {
+  display: flex;
+  overflow-x: auto;
+  white-space: nowrap;
+  scrollbar-width: none;
+}
+.img-container img {
+  width: 400px;
+  height: 40vh;
+}
+.insta {
+  display: flex;
+  justify-content: center;
+}
+.insta .menu-btn {
+  background-color: #7a5230;
+  padding: 15px;
+  border: none;
+  color: white;
+  font-weight: 400;
+  border-radius: 20px;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+}
+.menu-btn .fa-instagram {
+  margin-right: 10px;
+}
+/* Footer */
+.footer-main {
+  background-color: #7a5230;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+.footer-container {
+  display: flex;
+  padding: 50px;
+  gap: 5rem;
+  justify-content: center;
+}
+
+.footer-heading {
+  width: 30%;
+}
+
+.footer-heading h1 {
+  color: white;
+  font-family: "Futura PT Medium";
+  width: 60%;
+}
+
+.footer-text .footer-contact {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-btn a {
+  text-decoration: none;
+  color: white;
+  border: 1px solid white;
+  border-radius: 20px;
+  font-family: "Futura PT Medium";
+  padding: 10px;
+  transition: all .3s;
+}
+.footer-btn a:hover{
+  background-color: white;
+  color: #7a5230;
+}
+.footer-btn .contact-icon {
+  background-color: white;
+  padding: 5px 10px;
+  border-radius: 20px;
+  color: #7a5230;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+.footer-text .footer-content {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3rem;
+  gap: 1rem;
+}
+
+.footer-content .social {
+  display: flex;
+  gap: 5px;
+ 
+}
+
+.social .fa-brands {
+  color: white;
+  border: 1px solid white;
+  padding: 10px;
+  border-radius: 50%;
+  text-align: center;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  transition: all .3s;
+  justify-content: center;
+}
+
+.social .fa-brands:hover{
+  background-color: white;
+  color: #7a5230;
+}
+.footer-content .time {
+  display: flex;
+  font-family: "Futura PT Medium";
+  gap: 20px;
+  color: white;
+}
+.end-text {
+  background-color: #7a5230;
+  padding: 10px 0;
+  font-family: "Futura PT Medium";
+}
+
+.copy-right {
+  display: flex;
+  align-items: center;
+  color: white;
+  font-weight: 300;
+  font-size: 0.8rem;
+  padding: 10px;
+  margin: auto;
+  max-width: 1140px;
+  width: 90%;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.copy-right img {
+  padding: 5px;
+}
+
+.copy-right span {
+  font-weight: bold;
+  font-family: "Futura PT Medium";
+}
+
+/* Media Queries */
+@media (max-width: 1050px) {
+  .footer-container {
+    flex-direction: column;
+    padding: 20px;
+    gap: 2rem;
+    align-items: flex-start;
+  }
+
+  .footer-heading {
+    width: 100%;
+    text-align: start;
+  }
+
+  .footer-text .footer-contact {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: flex-start;
+  }
+
+  .footer-text .footer-content {
+    flex-direction: column;
+    gap: 2rem;
+    align-items: flex-start;
+  }
+
+  .footer-content .time {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+  }
+
+  .copy-right {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    margin-left: 130px;
+  }
+  .items-container {
+    flex-direction: column;
+  }
+  .right-side {
+    margin: auto;
+  }
+}
+@media (max-width: 900px) {
+  .copy-right {
+    margin-left: 60px;
+  }
+}
+
+@media (max-width: 800px) {
+  .copy-right {
+    margin-left: 20px;
+  }
+  .scroll-arrow {
+    display: flex;
+  }
+}
+
+@media (max-width: 768px) {
+  .arrow {
+    display: none;
+  }
+  .menu-container .menu-item {
+    padding: 5px 13px;
+  }
+  .footer-container {
+    flex-direction: column;
+    padding: 20px;
+    gap: 2rem;
+    align-items: flex-start;
+  }
+
+  .footer-heading {
+    width: 100%;
+    text-align: start;
+  }
+
+  .footer-text .footer-contact {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: flex-start;
+  }
+
+  .footer-text .footer-content {
+    flex-direction: column;
+    gap: 2rem;
+    align-items: flex-start;
+  }
+
+  .footer-content .time {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+  }
+
+  .copy-right {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-btn a {
+    font-size: 0.8rem;
+    padding: 8px;
+  }
+
+  .social .fa-brands {
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+  }
+
+  .footer-text .footer-contact {
+    align-items: flex-start;
+  }
+
+  .footer-heading {
+    width: 100%;
+    text-align: start;
+  }
+
+  .footer-text .footer-content {
+    align-items: flex-start;
+  }
+
+  .footer-btn {
+    gap: 0.5rem;
+  }
+}

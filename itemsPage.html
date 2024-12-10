@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="itmesPageStyle.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header class="navbar">
+      <a href="index.html" class="logo">
+        <img src="assets/logo.png" alt="Logo" />
+      </a>
+    </header>
+    <div class="navigation-wrapper">
+      <div class="menu-container">
+        <li class="menu-item" onclick="handleMenuClick(1)">BURGERE</li>
+        <li class="menu-item" onclick="handleMenuClick(2)">FROKOST TILBUD</li>
+        <li class="menu-item" onclick="handleMenuClick(3)">
+          ITALIENSK FAMILIEPIZZA
+        </li>
+        <li class="menu-item" >EKSTRA</li>
+        <li class="menu-item">TILBEHØR</li>
+        <li class="arrow">&#8594;</li>
+      </div>
+    </div>
+    <div class="items-container">
+      <div class="left-side">
+        <div class="cards">
+          <div class="card">
+            <img src="assets/Frame 1618873085.png" class="new" alt="Bottle" />
+            <img src="assets/pizza.png" class="item" alt="Bottle" />
+            <div class="card-content">
+              <div class="btn">
+                <button class="add">&#43;</button>
+              </div>
+              <div class="label">
+                <p>Galvanina</p>
+                <span>30KR.</span>
+              </div>
+              <span class="pra">Itanliansk sodavend 0,351</span>
+            </div>
+          </div>
+          <div class="card">
+            <img class="item" src="assets/can.png" alt="Bottle" />
+            <div class="card-content">
+              <div class="btn">
+                <button class="add">&#43;</button>
+              </div>
+              <div class="label">
+                <p>Coca Cola</p>
+                <span>20KR.</span>
+              </div>
+              <span class="pra">0,33 L</span>
+            </div>
+          </div>
+        </div>
+        <div class="cards">
+          <div class="card">
+            <img class="item" src="assets/orangeCan.png" alt="Bottle" />
+            <div class="card-content">
+              <div class="btn">
+                <button class="add">&#43;</button>
+              </div>
+              <div class="label">
+                <p>Coca Cola Zero</p>
+                <span>20KR.</span>
+              </div>
+              <span class="pra">0,33 L</span>
+            </div>
+          </div>
+          <div class="card">
+            <img class="item" src="assets/bottle.png" alt="Bottle" />
+            <div class="card-content">
+              <div class="btn">
+                <button class="add">&#43;</button>
+              </div>
+              <div class="label">
+                <p>Fanata</p>
+                <span>20KR.</span>
+              </div>
+              <span class="pra">0,33 L</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="right-side">
+        <div class="heading-menu">
+          <div class="first-heading">
+            <p>UDBRINGING</p>
+            <span>Min 170 kr.</span>
+          </div>
+          <p class="second-heading">AFHENTINING</p>
+        </div>
+        <h3 class="your-item">Your Items</h3>
+        <div class="cart">
+          <div class="cart-img">
+            <img src="assets/can.png" width="80px" alt="coldring" />
+          </div>
+          <div class="cart-item-detail">
+            <p class="head">Coca Cola Zero</p>
+            <span class="quantity">0,33L</span>
+            <div class="more-item">
+              <p  class="price" data-unit-price="20">20 KR.</p>
+              <span class="increament">
+                <div class="decreament" onclick="updatePrice(this, -1)">-</div>
+                <div class="quantity">1</div>
+                <div class="bg increase" onclick="updatePrice(this, 1)">+</div>
+              </span>
+            </div>
+          </div>
+        </div>
+        <hr />
+        <div class="cart">
+          <div class="cart-img">
+            <img src="assets/pizza.png" width="80px" alt="coldring" />
+          </div>
+          <div class="cart-item-detail">
+            <p class="head">Galvanina</p>
+            <span class="quantity">Itanliansk sodavend 0,351</span>
+            <div class="more-item">
+              <p class="price" data-unit-price="30">30 KR.</p>
+              <span class="increament">
+                <div class="decrement" onclick="updatePrice(this, -1)">-</div>
+                <div class="quantity">1</div>
+                <div class="bg increase" onclick="updatePrice(this, 1)">+</div>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="total">
+          <div class="sub">
+            <h4>Subtotal</h4>
+            <p id="subtotal">50 KR</p>
+          </div>
+          <div class="sub">
+            <h4>Lovpligtig pose</h4>
+            <p>5 KR</p>
+          </div>
+          <div class="sub">
+            <h4>Service gebyr</h4>
+            <p>0.70 KR</p>
+          </div>
+        </div>
+        <div class="all-total">
+          <div class="sub">
+            <h4 class="all-sub">Total <span>(Inkl. moms)</span></h4>
+            <p id="total">50.7 KR</p>
+          </div>
+          <div class="sub">
+            <h4 class="mute-sub">Heraf moms</h4>
+            <span class="mute-sub">44,14 KR.</span>
+          </div>
+        </div>
+        <div class="cart-btn">
+          <button>
+            Gå Til kassen <i class="fa-solid fa-arrow-right-long"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="map">
+        <h2>
+          Discover Your Favorite Slice at <br />
+          Liberta Pizzaria !
+        </h2>
+        <div class="google-map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8880.658813072914!2d10.198203501288667!3d56.18883096646276!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464c3e4a31519b81%3A0x61265c8025d2d225!2sLiberta%20Pizzaria!5e0!3m2!1sen!2s!4v1733554024036!5m2!1sen!2s"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+    </div>
+    <div class="menu-img">
+      <div class="insta">
+        <button class="menu-btn">
+          <i class="fa-brands fa-instagram"></i> libertapizzaria
+        </button>
+      </div>
+      <div class="img-container">
+        <img src="assets/image1.png" alt="" />
+        <img src="assets/image2.png" alt="" />
+        <img src="assets/image3.png" alt="" />
+        <img src="assets/image4.png" alt="" />
+        <img src="assets/image5.png" alt="" />
+      </div>
+    </div>
+    <footer>
+      <div class="footer-main">
+        <div class="footer-container">
+          <div class="footer-heading">
+            <h2>
+              LIBERTA PIZZARIA Frijsenborgvej 3 G, st 8240 Risskov Denmark
+            </h2>
+          </div>
+          <div class="footer-text">
+            <div class="footer-contact">
+              <div class="footer-btn">
+                <a href="">
+                  Rulevejledning
+                  <i class="fa-solid fa-arrow-right-long contact-icon"></i>
+                </a>
+              </div>
+              <div class="footer-btn">
+                <a href="https://mail.google.com">
+                  <i class="fa-solid fa-envelope contact-icon"></i>
+                  infor@liberata-pizzaria.dk
+                </a>
+              </div>
+              <div class="footer-btn">
+                <a href="tel:86 21 78 88">
+                  <i class="fa-solid fa-phone contact-icon"></i> 86 21 78 88
+                </a>
+              </div>
+            </div>
+            <div class="footer-content">
+              <div class="social">
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-linkedin"></i>
+                <i class="fa-brands fa-x"></i>
+                <i class="fa-brands fa-youtube"></i>
+              </div>
+              <div class="time">
+                <div>
+                  <p>Monday - Tirsdag</p>
+                  <span>16.00-22.00</span>
+                </div>
+                <div>
+                  <p>Onsdag - Lordag</p>
+                  <span>11.00-22.00</span>
+                </div>
+                <div>
+                  <p>lørdag - Søndag</p>
+                  <span>13.00-22.00</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="end-text">
+        <div class="copy-right">
+          <p>© 2024 <span>LIBERTA PIZZARIA</span> | ALL RIGHTS RESEVERD.</p>
+          <img src="assets/Footer.png" width="40px" alt="" />
+        </div>
+      </div>
+    </footer>
+    <script src="app.js"></script>
+  </body>
+</html>

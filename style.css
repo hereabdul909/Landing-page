@@ -1,0 +1,608 @@
+@import url(https://db.onlinewebfonts.com/c/ab8aa1609f0d6cbe79541c67cd5046f9?family=NeoTech+Bold);
+@import url(https://db.onlinewebfonts.com/c/3c6b0199ae7b57966132e83c939d77e2?family=Futura+PT+Medium);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: black;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000000;
+  color: white;
+}
+
+.navbar .logo {
+  margin-left: 30px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.navbar .logo img {
+  width: 150px;
+}
+
+.navbar .nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.navbar .nav-links a {
+  text-decoration: none;
+  color: white;
+  font-size: .9srem;
+  text-transform: uppercase;
+  font-family: "Futura PT Medium";
+}
+
+.navbar .nav-links a:hover {
+  color: #b5b5b5;
+}
+
+.navbar .nav-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.navbar .away{
+  border: 1px solid white;
+  border-radius: 10px;
+  display: none;
+}
+.nav-btn .cta {
+  text-decoration: none;
+  color: white;
+  background-color: #7A5230;
+  text-transform: uppercase;
+  padding: 33px 50px 33px 20px;
+  font-size: 0.9rem;
+  font-family: "Futura PT Medium";
+}
+
+.nav-btn .hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.hamburger .menu {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  background-color: #7A5230;
+  padding: 30px 40px;
+}
+
+.menu .bar-1 {
+  width: 15px;
+  height: 2px;
+  background-color: white;
+}
+
+.menu .bar-2 {
+  width: 20px;
+  height: 2px;
+  background-color: white;
+}
+
+.menu .bar-3 {
+  width: 25px;
+  height: 2px;
+  background-color: white;
+}
+
+.hero {
+  background: url('assets/hero.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+}
+
+.hero-content {
+  max-width: 1060px;
+  margin: 0 auto;
+  padding-top: 130px;
+  padding-bottom: 130px;
+  color: white;
+}
+
+.hero-content p {
+  font-size: 1.3rem;
+  font-family: "NeoTech Bold";
+  color: rgb(194, 197, 200);
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  font-family: "NeoTech Bold";
+
+  margin: 40px 0;
+}
+
+.hero-btn {
+  display: inline-block;
+  color: white;
+  border: 1px solid white;
+  border-radius: 20px;
+  font-family: "Futura PT Medium";
+  padding: 10px 20px;
+  text-decoration: none;
+}
+.hero-btn i {
+  margin-left: 8px;
+}
+
+.text-content {
+  max-width: 1060px;
+  margin: 0 auto;
+  padding-top: 50px;
+  color: white;
+}
+
+.text-content h1 {
+  font-size: 2.5rem;
+  width: 45%;
+  font-family: "NeoTech Bold";
+  margin: 5px 0;
+}
+
+.text-content h1 span {
+  color: #7A5230;
+}
+
+.content-wrapper {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pizza-content {
+  max-width: 1060px;
+  margin: 0 auto;
+  padding-top: 50px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5rem;
+  flex-wrap: wrap;
+}
+
+.pizza-content img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.pizza-content h2 {
+  font-weight: 400;
+  font-family: "Futura PT Medium";
+}
+
+.pizza-content p {
+  margin-top: 2rem;
+  width: 75%;
+  font-weight: 200;
+  color: #b5b5b5;
+  line-height: 2;
+  margin-bottom: 20px;
+  font-family: "Futura PT Medium";
+}
+
+.about-content {
+  max-width: 1060px;
+  margin: 0 auto;
+  padding-top: 50px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.about-content img {
+  width: 500px;
+}
+
+.about-content .over-box,
+.about-content .over-box-2 {
+  background-color: white;
+  padding: 30px;
+  margin-left: -120px;
+}
+
+.about-content .over-box-2 {
+  margin-left: 0;
+  margin-right: -120px;
+  z-index: 999;
+}
+
+.over-box h3,
+.over-box-2 h3 {
+  padding: 10px;
+  font-family: "Futura PT Medium";
+}
+
+.over-box p,
+.over-box-2 p {
+  padding: 10px;
+  line-height: 2;
+  font-family: "Futura PT Medium";
+  margin-bottom: 20px;
+}
+
+.over-box a,
+.over-box-2 a {
+  padding: 10px;
+  border-radius: 20px;
+  text-decoration: none;
+  color: white;
+  font-family: "Futura PT Medium";
+}
+.over-box a {
+  border: 1px solid black;
+  font-family: "Futura PT Medium";
+  background-color: black;
+  transition: all .3s;
+}
+.over-box a:hover{
+  border:1px solid black;
+  background-color: white;
+  color: black;
+}
+.over-box-2 a {
+  border: 1px solid #7A5230;
+  font-family: "Futura PT Medium";
+  background-color: #7A5230;
+  transition: all .3s;
+}
+.over-box-2 a:hover{
+  border:1px solid #7A5230;
+  background-color: white;
+  color: #7A5230;
+}
+.scroller-container {
+  max-width: 1060px;
+  margin: 0 auto;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  position: relative;
+}
+
+.scroller-container .link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Futura PT Medium";
+}
+
+.link .link-btn {
+  display: inline-block;
+  border-radius: 20px;
+  padding: 10px 20px;
+  text-decoration: none;
+  background-color: white;
+  color: black;
+  transition: all .3s;
+}
+.link-btn:hover{
+  background-color: black;
+  color: white;
+  border: 1px solid white;
+}
+.scroller-links{
+  display: flex;
+  overflow: auto;
+  gap: 30px;
+  scrollbar-width: none;
+}
+.scroller-links .scroller-link a{
+   color: rgb(130, 129, 129);
+   
+  text-decoration: none;
+}
+.scroller-link a.active {
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+}
+
+.boxes {
+  margin-top: 40px;
+  display: flex;
+  gap: 30px;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.box {
+  text-align: center;
+  width: 300px;
+  flex: 0 0 300px;
+  padding: 10px;
+  position: relative;
+}
+
+.box img {
+  width: 250px;
+  height: 180px;
+  margin: auto;
+  padding: 10px;
+}
+
+.box h2 {
+  color: white;
+  font-family: "NeoTech Bold";
+  margin-top: 10px;
+}
+
+.box p {
+  color: rgb(110, 108, 108);
+  text-align: center;
+  margin-top: 10px;
+  font-weight: 100;
+  font-family: "Futura PT Medium";
+}
+#next-arrow{
+  background-color: white;
+  color: black;
+  padding: 8px;
+  font-size: large;
+  border-radius: 20px;
+  position: absolute;
+  right: 0;
+  top: 13rem;
+  cursor: pointer;
+  transition: all .3s;
+}
+#next-arrow:hover{
+  background-color: black;
+  border: 1px solid white;
+  color: white;
+}
+.box .link-new{
+    position: absolute;
+    width: 70px;top: 0;
+    height: 70px;
+    left: 0;
+}
+@media (max-width: 1100px) {
+  .hero-content {
+    padding: 90px 20px 90px 20px;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
+
+  .hero-content h1 {
+    font-size: 2.5rem;
+    margin: 40px 0;
+  }
+
+  .text-content {
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .text-content h1 {
+    font-size: 2.2rem;
+    width: 50%;
+  }
+
+  .pizza-content {
+    width: 100%;
+    gap: 2rem;
+  }
+
+  .pizza-content p {
+    width: 85%;
+  }
+
+  .about-content {
+    flex-direction: column-reverse;
+    padding-top: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .about-content img {
+    width: 80%;
+  }
+
+  .about-content .over-box,
+  .about-content .over-box-2 {
+    width: 80%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .scroller-container .link{
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-wrap: wrap;
+  }
+
+  .navbar .logo {
+   margin-left: 20px;
+  }
+
+  .navbar .nav-links {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    background-color: #000000;
+    width: 100%;
+    color: white;
+    padding: 10px 0;
+  }
+
+  .nav-links .link-btn {
+    background-color: #7A5230;
+    color: white;
+    border-radius: 5px;
+  }
+
+  .navbar .nav-links a {
+    padding: 10px;
+  }
+
+  .nav-btn .cta {
+    display: none;
+  }
+  .navbar .away{
+    display: block;
+  }
+  .nav-btn .hamburger {
+    display: block;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .hero-content {
+    padding-top: 100px;
+  }
+
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .hero-btn {
+    padding: 8px 16px;
+  }
+
+  .text-content {
+    padding-top: 30px;
+  }
+
+  .text-content h1 {
+    font-size: 1.8rem;
+    width: 80%;
+  }
+
+  .pizza-content {
+    flex-direction: column;
+    text-align: start;
+    padding-left: 20px;
+    gap: 1rem;
+  }
+
+  .pizza-content p {
+    font-size: 1rem;
+    line-height: 1.5;
+    width: 100%;
+  }
+
+  .about-content {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 80px;
+  }
+
+  .about-content img {
+    width: 100%;
+  }
+
+  .about-content .over-box,
+  .about-content .over-box-2 {
+    width: 100%;
+  }
+
+  .scroller-container {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .scroller-container .link {
+    flex-direction: column;
+    gap: 20px;
+    position: relative;
+  }
+
+  .link-btn {
+    position: absolute;
+    top: 26rem;
+  }
+
+  .link .scroller-links{
+    gap: 12px;
+  }
+
+  .boxes {
+    flex-wrap: nowrap;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-content h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
+
+  .text-content h1 {
+    font-size: 1.5rem;
+  }
+
+  .pizza-content h2 {
+    font-size: 1.5rem;
+  }
+
+  .pizza-content p {
+    font-size: 0.9rem;
+    line-height: 1.4;
+  }
+
+  .text-content h1 {
+    font-size: 1.8rem;
+    width: 100%;
+  }
+
+  .about-content .over-box,
+  .about-content .over-box-2 {
+    padding: 20px;
+  }
+
+  .over-box h3,
+  .over-box-2 h3 {
+    padding: 7px;
+  }
+  .link-btn {
+    top: 25rem;
+
+  }
+  .about-content {
+    padding-top: 10px;
+  }
+  .over-box p,
+  .over-box-2 p {
+    padding: 6px;
+    line-height: 2;
+  }
+  .scroller-container .link{
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media (max-width: 320px) {
+  .link-btn {
+    top: 26rem;
+  }
+}
